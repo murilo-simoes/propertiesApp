@@ -1,0 +1,185 @@
+
+//#region TITULO DA PÁGINA
+
+.wrapperTitle{
+  margin-top: 2rem;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.pageTitle{
+  margin-top: 0;
+  font-weight: bold;
+  width: 80%;
+}
+.pageSubtitle{
+  font-size: 0.8rem;
+  color: gray;
+}
+
+//#endregion
+
+//#region CATEGORIAS
+
+.wrapperCategory{
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.categoryTitle{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.categoryPicker{
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --background: #ffffff;
+}
+
+
+.buttonCategory{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  --indicator-color:#000000;
+
+}
+
+.textCategory{
+  color:#e4e4e4;
+}
+
+//#endregion
+
+//#region LUGARES RECOMENDADOS
+
+.homeWrapper{
+  width: 90%;
+  margin-top:2rem;
+}
+
+.homeTitles{
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeText{
+  font-size: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
+.homeButton{
+  font-size: 0.8rem;
+  text-transform: none;
+  padding: 0.7rem;
+  color:rgb(167, 167, 167);
+  background-color: #ffffff;
+  border:none;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.1s all ease-in;
+}
+
+.homeButton:hover{
+  animation: shake 0.25s alternate;
+  background-color: #000;
+  color: #fff;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(2.5px);
+  }
+  50%{
+    transform: translateX(-2.5px);
+  }
+  100%{
+    transform: translateX(2.5px);
+
+  }
+}
+
+.homeCards{
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:5rem;
+}
+.homeCard{
+  width: 275px;
+  max-width: 275px;
+  min-width: 275px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.1s all ease-in;
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+}
+.homeCard:hover{
+  transform: scale(1.03);
+}
+.homeImage{
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 4/4;
+  border-radius: 1.5rem;
+}
+.homeCardTitle{
+  font-size: 1rem;
+  width: 100%;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.homeCardSubtitle{
+  font-size: 0.7rem;
+  margin: 0;
+  margin-top: 5px;
+  color:rgb(167, 167, 167);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.homeCardPrice{
+  font-weight: bold;
+  font-size: 1.1rem;
+
+}
+
+.homeCardPrecoDiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeCardAvaliacaoDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeCardAvaliacaoDiv h1{
+  margin:0;
+  font-size:1rem;
+  color:rgb(167, 167, 167);
+  margin-left: 0.1rem;
+}
+.homeCardAvaliacaoDiv ion-icon{
+  margin:0;
+  font-size:1rem;
+  color:rgb(245, 245, 4);
+}
+
+//#endregion

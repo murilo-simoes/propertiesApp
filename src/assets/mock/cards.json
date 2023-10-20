@@ -1,0 +1,87 @@
+[
+  {
+    "id":1,
+    "title": "Moderna e Minimalista",
+    "subtitle":"Rua Pedro Rodrigues",
+    "preco":"430.000",
+    "img":"../../assets/casa.jpg",
+    "alt":"Casa Moderna",
+    "avaliacao":4,
+    "tipo":"alugar",
+    "bathroom":4,
+    "bedroom":3,
+    "desc": "Essa é minha casa bem localizada na barra da tijuca e ela consegue ser util para você de todas as formas que imaginar, lá é um bairro totalmente seguro localizado no Rio De Janeiro, com ótimas escolas perto e muitos comércios locais!"
+
+
+  },
+  {
+    "id":2,
+    "title": "Luxuosa e Adorável",
+    "subtitle":"Zona Norte",
+    "preco":"950.000",
+    "img":"../../assets/casa1.jpg",
+    "alt":"Casa Moderna",
+    "avaliacao":5,
+    "tipo":"comprar",
+    "bathroom":5,
+    "bedroom":6,
+    "desc": "Essa é minha casa bem localizada na barra da tijuca e ela consegue ser util para você de todas as formas que imaginar, lá é um bairro totalmente seguro localizado no Rio De Janeiro, com ótimas escolas perto e muitos comércios locais!!"
+
+  },
+  {
+    "id":3,
+    "title": "Arejada e com piscina",
+    "subtitle":"Barra da Tijuca",
+    "preco":"1.640.000",
+    "img":"../../assets/casa2.jpg",
+    "alt":"Casa Moderna",
+    "avaliacao":4,
+    "tipo":"comprar",
+    "bathroom":7,
+    "bedroom":5,
+    "desc": "Essa é minha casa bem localizada na barra da tijuca e ela consegue ser util para você de todas as formas que imaginar, lá é um bairro totalmente seguro localizado no Rio De Janeiro, com ótimas escolas perto e muitos comércios locais!!"
+
+  },
+  {
+    "id":4,
+    "title": "Arejada e com piscina",
+    "subtitle":"Barra da Tijuca",
+    "preco":"540.000",
+    "img":"../../assets/casa3.jpg",
+    "alt":"Casa Moderna",
+    "avaliacao":1,
+    "tipo":"alugar",
+    "bathroom":2,
+    "bedroom":2,
+    "desc": "Essa é minha casa bem localizada na barra da tijuca e ela consegue ser util para você de todas as formas que imaginar, lá é um bairro totalmente seguro localizado no Rio De Janeiro, com ótimas escolas perto e muitos comércios locais!!"
+
+  },
+  {
+    "id":5,
+    "title": "Arejada e com piscina",
+    "subtitle":"Barra da Tijuca",
+    "preco":"610.000",
+    "img":"../../assets/casa4.jpg",
+    "alt":"Casa Moderna",
+    "avaliacao":4,
+    "tipo":"comprar",
+    "bathroom":3,
+    "bedroom":4,
+    "desc": "Essa é minha casa bem localizada na barra da tijuca e ela consegue ser util para você de todas as formas que imaginar, lá é um bairro totalmente seguro localizado no Rio De Janeiro, com ótimas escolas perto e muitos comércios locais!!"
+
+  },
+  {
+    "id":6,
+    "title": "Natural e Amigável",
+    "subtitle":"Campinas",
+    "preco":"310.000",
+    "img":"../../assets/casa5.jpg",
+    "alt":"Casa Moderna",
+    "avaliacao":1,
+    "tipo":"alugar",
+    "bathroom":2,
+    "bedroom":1,
+    "desc": "Essa é minha casa bem localizada na barra da tijuca e ela consegue ser util para você de todas as formas que imaginar, lá é um bairro totalmente seguro localizado no Rio De Janeiro, com ótimas escolas perto e muitos comércios locais!!"
+
+  }
+]

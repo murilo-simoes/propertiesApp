@@ -1,17 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="container animate__animated animate__zoomIn">
+      <div class="wrapper">
+        <div class="wrapperTitle">
+            <h3 class="pageSubtitle">Boa tarde!</h3>
+            <h1 class="pageTitle">Ache facilmente casa para comprar ou alugar</h1>
+        </div>
+        <div class="wrapperInput">
+          <ion-icon class="searchIcon" name="search"></ion-icon>
+          <input [(ngModel)]="search" (ngModelChange)="filterDataInput(data)" type="text" class="searchInput" placeholder="Procurar"/>
+        </div>
+        <div class="wrapperCategory">
+            <h1 class="categoryTitle">Categorias</h1>
+            <ion-segment (ionChange)="filterData(data)" class="categoryPicker" mode="ios" swipeGesture="true" [(ngModel)]="tipo">
+              <ion-segment-button  value="alugar" class="buttonCategory" >
+                <ion-label class="textCategory">Alugar</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value="comprar" class="buttonCategory" >
+                <ion-label class="textCategory">Comprar</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+        </div>
+        <div class="homeWrapper">
+          <div class="homeTitles">
+            <h1 class="homeText">Lugares Recomendados</h1>
+            <button class="homeButton" [routerLink]="['/tabs/tab2']" >Ver todos</button>
+          </div>
+          <div>
+            <swiper-container class="homeCards"
+            [slidesOffsetAfter]="0"
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+            >
+              <swiper-slide *ngFor="let item of dataFiltrada" id="{{item.id}}" (click)="Details(item.id)" class="homeCard" >
+                <img class="homeImage" src="{{item.img}}" alt="{{item.alt}}" />
+                <h1 class="homeCardTitle">{{item.title}}</h1>
+                <h6 class="homeCardSubtitle">{{item.subtitle}}</h6>
+                <div class="homeCardPrecoDiv">
+                  <h3 class="homeCardPrice">R${{item.preco}}</h3>
+                  <div class="homeCardAvaliacaoDiv">
+                    <ion-icon name="star"></ion-icon>
+                    <h1>{{item.avaliacao}}</h1>
+                  </div>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </div>
+    </div>
 </ion-content>

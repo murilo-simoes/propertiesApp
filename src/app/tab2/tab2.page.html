@@ -1,17 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="container animate__animated animate__zoomIn">
+    <div class="wrapper">
+      <div class="wrapperInput" style="margin-top:2rem">
+        <ion-icon class="searchIcon" name="search"></ion-icon>
+        <input [(ngModel)]="search" type="text" class="searchInput" placeholder="Procurar"/>
+      </div>
+      <div class="wrapperProperties">
+        <div class="propertiesTitleList">
+          <h1 class="propertiesTitleText">Todas as propriedades</h1>
+        </div>
+        <div class="propertiesList">
+          <div *ngFor="let item of data" id="{{item.id}}" class="propertiesCard">
+            <div (click)="Details(item.id)" class="propertiesDivImg">
+              <img class="propertiesImg" src="{{item.img}}" alt="{{item.alt}}"/>
+            </div>
+            <div class="propertiesInfo">
+              <div class="propertiesLikeDiv">
+                <h1 (click)="Details(item.id)" class="propertiesTitle">{{item.title}}</h1>
+                <ion-icon (click)="setValue(item.id, item)" name="heart" class="{{corCoracao[data.indexOf(item)] || 'icon-heart-off'}}"></ion-icon>
+              </div>
+              <div (click)="Details(item.id)" class="subtitleIcon">
+                <ion-icon name="location" class="icon"></ion-icon>
+                <h3 class="propertiesSubtitle">{{item.subtitle}}</h3>
+              </div>
+              <div (click)="Details(item.id)" class="propertiesStar">
+                <ion-icon name="{{item.avaliacao <= 0 ? 'star-outline' : 'star'}}"></ion-icon>
+                <ion-icon name="{{item.avaliacao <= 1 ? 'star-outline' : 'star'}}"></ion-icon>
+                <ion-icon name="{{item.avaliacao <= 2 ? 'star-outline' : 'star'}}"></ion-icon>
+                <ion-icon name="{{item.avaliacao <= 3 ? 'star-outline' : 'star'}}"></ion-icon>
+                <ion-icon  name="{{item.avaliacao <= 4 ? 'star-outline' : 'star'}}"></ion-icon>
+              </div>
+              <h1 (click)="Details(item.id)" class="propertiesPreco">R${{item.preco}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

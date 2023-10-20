@@ -1,0 +1,48 @@
+
+<ion-content [fullscreen]="true">
+  <div class="container" >
+    <div *ngFor="let item of home" class="wrapper">
+      <div class="wrapperImage">
+        <img class="wrapperImageSrc" src="{{item.img}}" alt="{{item.alt}}"/>
+        <div class="wrapperItemsImage">
+          <div class="wrapperImageHead">
+            <div class="wrapperImageIcon">
+              <ion-icon class="icon-arrow" (click)="Back()" name="chevron-back-outline"></ion-icon>
+            </div>
+            <ion-icon (click)="setValue(item.id, item)" name="heart" class="{{corCoracao || 'icon-heart-off'}}"></ion-icon>
+          </div>
+          <div class="wrapperImageTitle">
+            <h1 class="homeTitle">{{item.title}}</h1>
+            <h6 class="homeSubtitle">{{item.subtitle}}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="wrapperFacilitie">
+        <h1>Facilidades e Cômodos</h1>
+        <div class="wrapperFeatures">
+          <div class="bedroom">
+            <img class="imageBedroom" src="../../assets/cama.png" alt="Quarto">
+            <h3 class="titleBedroom">{{item.bedroom}} Banheiros</h3>
+          </div>
+          <div class="bedroom">
+            <img class="imageBedroom" src="../../assets/banheira.png" alt="Banheiro">
+            <h3 class="titleBedroom">{{item.bathroom}} Quartos</h3>
+          </div>
+        </div>
+      </div>
+      <div class="wrapperDesc">
+        <h1 class="wrapperDescTitle">Descrição</h1>
+        <p class="wrapperDescSubtitle">{{item.desc}}</p>
+      </div>
+      <div class="wrapperBuy">
+        <div class="wrapperPrice">
+          <h3 class="wrapperBuyTitle">Price</h3>
+          <h1 class="wrapperBuyPrice">R${{item.preco}}</h1>
+        </div>
+        <div class="wrapperBuyNow">
+          <button class="wrapperBuyButton" (click)="comprarCasa('Vai trabalhar!')">Comprar Agora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

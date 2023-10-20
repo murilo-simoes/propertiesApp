@@ -1,0 +1,244 @@
+
+
+//#region IMAGEM BANNER
+
+.wrapperImage{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+}
+.wrapperImageSrc{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4rem;
+  padding: 1rem;
+  height: 500px;
+}
+@media screen and (max-width:400px) {
+  .wrapperImageSrc{
+    border-radius: 5rem;
+  }
+}
+
+.wrapperItemsImage{
+
+ display: flex;
+ width: 80%;
+ height: 400px;
+ align-items: center;
+ justify-content: space-between;
+ position: absolute;
+ flex-direction: column;
+}
+
+.wrapperImageHead{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapperImageIcon{
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-arrow{
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(175, 175, 175);
+}
+
+.icon-heart-off{
+  font-size: 1.8rem;
+  color:#fff;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.icon-heart-on{
+  font-size: 1.8rem;
+  color:red;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.wrapperImageTitle{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.homeTitle{
+  color: #fff;
+  margin: 0;
+
+}
+
+.homeSubtitle{
+  color: #e9e9e9;
+
+}
+//#endregion
+
+//#region FEATURES
+
+  .wrapperFacilitie{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+  .wrapperFacilitie > h1{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .wrapperFeatures{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .bedroom{
+    width: 45%;
+    height: 65px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+  }
+  .imageBedroom{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    padding: 0.5rem;
+
+  }
+  .titleBedroom{
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width:450px) {
+    .wrapperFeatures{
+      flex-direction: column;
+      height: 175px;
+    }
+    .bedroom{
+      width: 100%;
+      height:80px;
+    }
+    .titleBedroom{
+      font-size: 1.5rem;
+    }
+    .imageBedroom{
+      width: 85px;
+      height: 85px;
+    }
+  }
+
+//#endregion
+
+//#region DESCRIÇÃO
+
+  .wrapperDesc{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .wrapperDescTitle{
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .wrapperDescSubtitle{
+    font-size: 0.9rem;
+    color: rgb(175, 175, 175);
+    width: 100%;
+  }
+
+//#endregion
+
+//#region PRECO E COMPRAR
+
+  .wrapperBuy{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .wrapperPrice{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .wrapperBuyTitle{
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(175, 175, 175);
+
+  }
+  .wrapperBuyPrice{
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+
+  .wrapperBuyNow{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .wrapperBuyButton{
+    padding: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: rgb(202, 202, 202);
+    transition: 0.1s all ease-in;
+    font-size: 1.1rem;
+  }
+
+  .wrapperBuyButton:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color:#000;
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+//#endregion
